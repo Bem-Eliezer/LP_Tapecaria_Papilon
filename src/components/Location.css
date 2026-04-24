@@ -1,0 +1,121 @@
+.location {
+  padding: 100px 24px;
+  background: var(--dark);
+}
+
+.location__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.location__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 36px;
+}
+
+.location__details {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 36px;
+}
+
+.location__detail {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.location__detail-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+
+.location__detail-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.location__detail strong {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.location__detail p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+}
+
+.location__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.location__map {
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  position: relative;
+}
+
+.location__map iframe {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1) invert(0.9) sepia(0.3) hue-rotate(175deg) saturate(0.6);
+}
+
+.location__map-overlay {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold);
+  color: var(--black);
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 10px 18px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.location__map-overlay:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .location__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .location__map {
+    height: 320px;
+    order: -1;
+  }
+}

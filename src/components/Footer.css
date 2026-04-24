@@ -1,0 +1,130 @@
+.footer {
+  background: var(--black);
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.footer__top {
+  padding: 72px 24px;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 48px;
+}
+
+.footer__brand {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer__brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.footer__brand-sub {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer__col h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer__col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__col ul li,
+.footer__col ul li a {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  transition: color 0.2s;
+}
+
+.footer__col ul li a:hover {
+  color: var(--gold);
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+}
+
+.footer__social svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.footer__social:hover {
+  color: var(--gold);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 20px 24px;
+}
+
+.footer__bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer__bottom p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 900px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+  .footer__bottom-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
