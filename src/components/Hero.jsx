@@ -1,4 +1,5 @@
 import Logo from './Logo'
+import heroBg from '../assets/banco2.jpeg'
 import './Hero.css'
 
 const WHATSAPP_URL = 'https://wa.me/5511931508898?text=Olá! Gostaria de um orçamento.'
@@ -6,8 +7,9 @@ const INSTAGRAM_URL = 'https://instagram.com/tapecariapapilon'
 
 export default function Hero() {
   return (
-    <section className="hero" id="hero">
+    <section className="hero" id="hero" style={{ backgroundImage: `url(${heroBg})` }}>
       <div className="hero__bg-pattern" />
+      <div className="hero__bg-overlay" />
       <div className="hero__inner">
         <div className="hero__logo-wrap">
           <Logo size={180} />
