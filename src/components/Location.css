@@ -119,3 +119,25 @@
     order: -1;
   }
 }
+
+@media (max-width: 768px) {
+  .location {
+    padding: 72px 20px;
+  }
+  .location__actions {
+    flex-direction: column;
+  }
+  .location__actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .location {
+    padding: 56px 16px;
+  }
+  .location__map {
+    height: 260px;
+  }
+}

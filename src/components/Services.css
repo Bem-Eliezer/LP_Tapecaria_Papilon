@@ -92,6 +92,18 @@
   background: rgba(212, 175, 55, 0.15);
 }
 
+@media (max-width: 768px) {
+  .services {
+    padding: 72px 20px;
+  }
+  .services__header {
+    margin-bottom: 40px;
+  }
+  .service-card {
+    padding: 28px 22px;
+  }
+}
+
 @media (max-width: 560px) {
   .services__grid {
     grid-template-columns: 1fr;

@@ -80,3 +80,21 @@
     gap: 48px;
   }
 }
+
+@media (max-width: 768px) {
+  .diff {
+    padding: 72px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .diff {
+    padding: 56px 16px;
+  }
+  .diff__inner {
+    gap: 36px;
+  }
+  .diff-item {
+    gap: 16px;
+  }
+}

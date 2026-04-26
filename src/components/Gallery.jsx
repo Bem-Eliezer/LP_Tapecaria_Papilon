@@ -4,6 +4,9 @@ import './Gallery.css'
 import foto1 from '../assets/gallery/maisCurtFot1.jpeg'
 import foto2 from '../assets/gallery/maisCurtFot2.jpeg'
 import foto3 from '../assets/gallery/maisCurtFot3.jpeg'
+import foto4 from '../assets/gallery/maisCurt4.jpeg'
+import foto5 from '../assets/gallery/maisCurt5.jpeg'
+import foto6 from '../assets/gallery/maisCurt6.jpeg'
 import video1 from '../assets/gallery/maisCurt1.mp4'
 import video2 from '../assets/gallery/maisCurt2.mp4'
 import video3 from '../assets/gallery/maisCurt3.mp4'
@@ -17,6 +20,9 @@ const posts = [
   { type: 'image', src: foto2,  caption: 'Interior renovado' },
   { type: 'video', src: video3, caption: 'Painel e portas revestidos' },
   { type: 'image', src: foto3,  caption: 'Resultado impecável' },
+  { type: 'image', src: foto4,  caption: 'Detalhes em couro' },
+  { type: 'image', src: foto5,  caption: 'Acabamento premium' },
+  { type: 'image', src: foto6,  caption: 'Transformação completa' },
 ]
 
 function VideoModal({ src, caption, onClose }) {

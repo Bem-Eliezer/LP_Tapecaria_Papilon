@@ -119,7 +119,16 @@
   }
 }
 
+@media (max-width: 768px) {
+  .footer__top {
+    padding: 56px 20px;
+  }
+}
+
 @media (max-width: 560px) {
+  .footer__top {
+    padding: 48px 16px;
+  }
   .footer__inner {
     grid-template-columns: 1fr;
   }

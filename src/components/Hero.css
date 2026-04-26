@@ -126,16 +126,37 @@
   50% { opacity: 0.3; transform: scaleY(0.6); }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 16px 60px;
+  }
+  .hero__logo-wrap {
+    margin-bottom: 20px;
+  }
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 600px) {
   .hero__stats {
-    gap: 24px;
-    padding: 24px;
+    gap: 20px;
+    padding: 20px 16px;
+    flex-direction: column;
   }
   .hero__stat-divider {
-    width: 40px;
+    width: 60px;
     height: 1px;
   }
-  .hero__stats {
-    flex-direction: column;
+  .hero__stat-number {
+    font-size: 1.6rem;
   }
 }

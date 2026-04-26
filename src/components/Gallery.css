@@ -256,9 +256,24 @@
   }
 }
 
+@media (max-width: 768px) {
+  .gallery {
+    padding: 72px 20px;
+  }
+  .gallery__header {
+    margin-bottom: 36px;
+  }
+}
+
 @media (max-width: 480px) {
+  .gallery {
+    padding: 56px 16px;
+  }
   .gallery__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
+  }
+  .gallery__item {
+    aspect-ratio: 3 / 4;
   }
 }

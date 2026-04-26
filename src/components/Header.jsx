@@ -19,7 +19,10 @@ export default function Header() {
       <div className="header__inner">
         <a href="#hero" className="header__logo">
           <Logo size={44} />
-          <span className="header__brand">Papilon<span> Couro</span> - Tapeçaria Premium</span>
+          <span className="header__brand">
+            Papilon<span> Couros</span>
+            <em className="header__brand-sub">Tapeçaria Premium</em>
+          </span>
         </a>
 
         <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
